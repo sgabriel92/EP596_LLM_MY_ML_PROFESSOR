@@ -19,10 +19,8 @@ SECRET_TOKEN_pineconekey = os.getenv("pinecone_key_mlbot")
 SECRET_TOKEN_pineconeindex = os.getenv("pinecone_index_mlbot")
 SECRET_TOKEN_GOOGLE_CSE_ID = os.getenv("GOOGLE_CSE_ID")
 SECRET_TOKEN_GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-os.environ["GOOGLE_CSE_ID"] = "5055ad72b7a3146d0"
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDIIqsd8ea8t09pQIY1P2yx21gR35yhmPE"
-# os.environ["GOOGLE_CSE_ID"] = SECRET_TOKEN_GOOGLE_CSE_ID
-# os.environ["GOOGLE_API_KEY"] = SECRET_TOKEN_GOOGLE_API_KEY
+os.environ["GOOGLE_CSE_ID"] = SECRET_TOKEN_GOOGLE_CSE_ID
+os.environ["GOOGLE_API_KEY"] = SECRET_TOKEN_GOOGLE_API_KEY
 
 search = GoogleSearchAPIWrapper()
 
@@ -280,18 +278,10 @@ class Head_Agent:
 
 
 st.title("The Pytorch Professor: Your ML Book Chat Bot")
-
-
-# TODO: Replace with your actual OpenAI API key
 # Open the file
-openai_key = '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'
-pinecone_key = "85c03cc5-ce19-4478-84a1-66db09828e53"
-pinecone_index_name = "eep596llm"
-# TODO: Replace with your actual OpenAI API key
-# Open the file
-# openai_key = SECRET_TOKEN_openaikey
-# pinecone_key = SECRET_TOKEN_pineconekey
-# pinecone_index_name = SECRET_TOKEN_pineconeindex
+openai_key = SECRET_TOKEN_openaikey
+pinecone_key = SECRET_TOKEN_pineconekey
+pinecone_index_name = SECRET_TOKEN_pineconeindex
 
 
 # Define a function to get the conversation history (Not required for Part-2, will be useful in Part-3)
