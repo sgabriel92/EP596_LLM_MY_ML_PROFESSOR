@@ -1,6 +1,6 @@
 # The Pytorch Professor: Your ML Book Chat Bot
-
-This project is a chatbot application built with Python, Pinecone, OpenAI, LangChain and Streamlit. The chatbot, named "The ML Professor", is designed to answer questions and engage in conversation about machine learning topics.
+![ProjectGif](MY_LLM_Professor.gif)
+This project is a chatbot application built with Python, Pinecone, OpenAI, LangChain and Streamlit. The chatbot, named "The ML Professor", is designed to answer questions and engage in conversation about machine learning topics. The streamlit app is also hosted on Huggingface. 
 
 ## Features
 
